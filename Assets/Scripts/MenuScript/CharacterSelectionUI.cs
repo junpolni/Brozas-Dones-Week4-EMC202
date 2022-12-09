@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+
 public class CharacterSelectionUI : MonoBehaviour
 {
     public GameObject optionPrefab;
@@ -27,8 +29,8 @@ public class CharacterSelectionUI : MonoBehaviour
 
             // this code has an error even though its correct its messing up character selection
             //this code is for dispalying Character names.
-            /*Text text = option.GetComponentInChildren<Text>();
-             text.text = c.name;*/
+            TextMeshProUGUI text = option.GetComponentInChildren<TextMeshProUGUI>();
+            text.text = c.name;
             
             Image image = option.GetComponentInChildren<Image>();
             image.sprite = c.icon;
