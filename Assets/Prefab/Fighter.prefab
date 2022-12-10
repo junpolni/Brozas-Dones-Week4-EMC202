@@ -11,15 +11,15 @@ GameObject:
   - component: {fileID: 855985888822017247}
   - component: {fileID: 855985888822017244}
   - component: {fileID: 855985888822017245}
-  - component: {fileID: 855985888822017242}
+  - component: {fileID: 6946913936023838387}
   - component: {fileID: 4296382532914141405}
   - component: {fileID: 2701653490282722087}
   - component: {fileID: 4819952895943617396}
   - component: {fileID: 8719687009070055728}
   - component: {fileID: 7849834374010110901}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fighter
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,14 +109,14 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &855985888822017242
-BoxCollider2D:
+--- !u!58 &6946913936023838387
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,18 +129,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1.3333334}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Radius: 0.45
 --- !u!114 &4296382532914141405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,7 +381,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2243413582128007050}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -430,7 +420,7 @@ GameObject:
   - component: {fileID: 3405821572244590681}
   - component: {fileID: 6952435307211776029}
   - component: {fileID: 4218605659112694510}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -506,7 +496,7 @@ GameObject:
   - component: {fileID: 811433497158417074}
   - component: {fileID: 5336594615230058400}
   - component: {fileID: 3639094608590600908}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -580,7 +570,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4724884028982421203}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -619,7 +609,7 @@ GameObject:
   - component: {fileID: 7389540023658500986}
   - component: {fileID: 976366080370701718}
   - component: {fileID: 7957107492060001326}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -694,7 +684,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8897784169419932887}
   - component: {fileID: 2204540977867288107}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: HealthUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -869,7 +859,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1529783237669824524}
   - component: {fileID: 4457003114509229908}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: OrbPowerUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1076,7 +1066,7 @@ GameObject:
   - component: {fileID: 2246942752653207679}
   - component: {fileID: 957350424851156704}
   - component: {fileID: 8386477919252284504}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
