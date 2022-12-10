@@ -16,6 +16,8 @@ public class PlayerAttack : MonoBehaviour
     [Range(0, 3)]
     [SerializeField] float MaxOrbCharge;
 
+    [SerializeField] private AudioSource shootingSound;
+
     float OrbCharge;
 
     bool CanFire = true;
@@ -76,6 +78,8 @@ public class PlayerAttack : MonoBehaviour
 
     public virtual void FireOrb()
     {
+        shootingSound.Play();
+
         if (OrbCharge > MaxOrbCharge) OrbCharge = MaxOrbCharge;
 
         float OrbprojectileSpeed = OrbCharge + OrbPower;

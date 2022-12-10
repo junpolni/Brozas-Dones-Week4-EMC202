@@ -843,13 +843,13 @@ MonoBehaviour:
   characters:
   - prefab: {fileID: 855985888822017240, guid: 456d81a603068e348886986d10576cf8, type: 3}
     name: Fighter
-    icon: {fileID: 7482667652216324306, guid: aebb46992c726a148aaa7839eedf0a2e, type: 3}
+    icon: {fileID: 1894834038, guid: fbf85f1484cc8b0499fcb8a63418e7f7, type: 3}
   - prefab: {fileID: 8182171514571300778, guid: c23d0152d04cdb046a3dcb5def8ed045, type: 3}
     name: Mage
-    icon: {fileID: -2135585597343286014, guid: 5b20c5bb75bba3145852cc22a12eb519, type: 3}
+    icon: {fileID: 1782155169, guid: 50c382302d13f36478fa8fbea6b3b53e, type: 3}
   - prefab: {fileID: 73576810464082732, guid: 16ced3e0d351f5d4cb9849e92f3df1ae, type: 3}
     name: Ranger
-    icon: {fileID: -2413806693520163455, guid: fdb60b3a78e50fc46aeb65680d22fafb, type: 3}
+    icon: {fileID: -1792682575, guid: 9b4a13c13fbec7c42b27440a5f2f3955, type: 3}
   currentCharacter:
     prefab: {fileID: 0}
     name: 

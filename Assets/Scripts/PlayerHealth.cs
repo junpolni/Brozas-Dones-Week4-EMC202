@@ -9,6 +9,8 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private float _maxHealth = 100f;
     [SerializeField] private Slider _healthSlider;
 
+    [SerializeField] private AudioSource playerDeathSound;
+
     private void Start()
     {
         _health = _maxHealth;
@@ -26,6 +28,7 @@ public class PlayerHealth : MonoBehaviour
         {
             _health = 0f;
             _healthSlider.value = _health;
+            playerDeathSound.Play();
             Destroy(gameObject);
             PlayerDied();
            

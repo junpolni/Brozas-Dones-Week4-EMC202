@@ -2570,6 +2570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 20
   _healthSlider: {fileID: 2063988842}
+  playerDeathSound: {fileID: 0}
 --- !u!114 &1852712689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2588,6 +2589,7 @@ MonoBehaviour:
   Orb: {fileID: 353147037}
   OrbPower: 10
   MaxOrbCharge: 3
+  shootingSound: {fileID: 0}
 --- !u!1 &2000622471
 GameObject:
   m_ObjectHideFlags: 0
