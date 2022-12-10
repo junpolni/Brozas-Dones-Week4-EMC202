@@ -15,8 +15,6 @@ public class Enemy : MonoBehaviour
     private float _health;
     [SerializeField] private float _maxhealth;
 
-    [SerializeField] private AudioSource enemyDeathSound;
-
     private Transform target;
 
     private void Start()
@@ -32,9 +30,9 @@ public class Enemy : MonoBehaviour
         if (_health <= 0)
         {
             Destroy(gameObject);
-            enemyDeathSound.Play();
         }
     }
+
     private void FixedUpdate()
     {
         if (target != null)
