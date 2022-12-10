@@ -5,7 +5,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    
     public Character[] characters;
+
     public Character currentCharacter;
 
     private void Awake()

@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class PlayerAttack : MonoBehaviour
 {
-    [SerializeField] GameObject OrbProjectileprefab;
-    [SerializeField] SpriteRenderer OrbProjectileGFX;
-    [SerializeField] Slider OrbPowerSlider;
-    [SerializeField] Transform Orb;
+    [SerializeField] private GameObject OrbProjectileprefab;
+    [SerializeField] private SpriteRenderer OrbProjectileGFX;
+    [SerializeField] private Slider OrbPowerSlider;
+    [SerializeField] private Transform Orb;
 
     [Range(0, 10)]
     [SerializeField] float OrbPower;
@@ -53,7 +53,7 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
-    void ChargeOrb()
+    public virtual void ChargeOrb()
     {
         OrbProjectileGFX.enabled = true;
 
@@ -67,7 +67,14 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
-    void FireOrb()
+    /*public virtual void Shoot()
+    {
+        OrbProjectile OrbProjectile = Instantiate(OrbProjectileprefab, Orb.position, Orb.rotation).GetComponent<OrbProjectile>();
+        //OrbProjectile.OrbVelocity = OrbprojectileSpeed;
+        //OrbProjectile.OrbDamage = OrbDamage;
+    } */
+
+    public virtual void FireOrb()
     {
         if (OrbCharge > MaxOrbCharge) OrbCharge = MaxOrbCharge;
 
