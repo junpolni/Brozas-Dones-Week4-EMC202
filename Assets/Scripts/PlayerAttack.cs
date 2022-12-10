@@ -10,13 +10,13 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private Slider OrbPowerSlider;
     [SerializeField] private Transform Orb;
 
+    [SerializeField] private AudioSource shootingSound;
+
     [Range(0, 10)]
     [SerializeField] float OrbPower;
 
     [Range(0, 3)]
     [SerializeField] float MaxOrbCharge;
-
-    [SerializeField] private AudioSource shootingSound;
 
     float OrbCharge;
 
@@ -68,13 +68,6 @@ public class PlayerAttack : MonoBehaviour
             OrbPowerSlider.value = MaxOrbCharge;
         }
     }
-
-    /*public virtual void Shoot()
-    {
-        OrbProjectile OrbProjectile = Instantiate(OrbProjectileprefab, Orb.position, Orb.rotation).GetComponent<OrbProjectile>();
-        //OrbProjectile.OrbVelocity = OrbprojectileSpeed;
-        //OrbProjectile.OrbDamage = OrbDamage;
-    } */
 
     public virtual void FireOrb()
     {

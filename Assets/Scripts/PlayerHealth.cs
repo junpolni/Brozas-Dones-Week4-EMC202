@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
+    private Rigidbody2D rb;
+
     private float _health = 0f;
     [SerializeField] private float _maxHealth = 100f;
     [SerializeField] private Slider _healthSlider;
-
-    [SerializeField] private AudioSource playerDeathSound;
 
     private void Start()
     {
@@ -28,8 +28,6 @@ public class PlayerHealth : MonoBehaviour
         {
             _health = 0f;
             _healthSlider.value = _health;
-            playerDeathSound.Play();
-            Destroy(gameObject);
             PlayerDied();
            
         }
